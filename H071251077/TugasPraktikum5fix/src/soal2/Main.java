@@ -1,0 +1,27 @@
+package soal2;
+
+public class Main {
+    public static void main(String[] args) {
+        SmartLamp lamp = new SmartLamp("Phi lips", 10);
+        SmartCCTV cctv = new SmartCCTV("Hikvision", 15);
+        SmartSpeaker speaker = new SmartSpeaker("JBL", 25);
+
+        System.out.println("=== SmartLamp ===");
+        lamp.cekFungsi();
+        lamp.infoPower();
+        lamp.prosesPerintah("nyala");
+
+        System.out.println();
+        System.out.println("=== SmartCCTV ===");
+        cctv.cekFungsi();
+        cctv.infoPower();
+        cctv.hubungkanWiFi();
+
+        System.out.println();
+        System.out.println("=== SmartSpeaker ===");
+        speaker.cekFungsi();          
+        speaker.infoPower();          
+        speaker.hubungkanWiFi();       
+        speaker.prosesPerintah("Putar musik jazz");  
+    }
+}
